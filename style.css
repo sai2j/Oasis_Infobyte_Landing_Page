@@ -1,0 +1,218 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    /* transition: all 0.4s ease; */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.no-arrows::-webkit-inner-spin-button,.no-arrows::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: rgba(247, 215, 155, 0.665);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.header .logo{
+    height: 80px;
+    margin: 18px;
+    margin-left: 50px;
+}
+.navbar{
+    display: flex;
+    padding: 10px;
+    width: 40%;
+    justify-content: space-evenly;
+}
+.navbar a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    word-spacing: 1px;
+}
+.navbar a:hover{
+    color: red;
+    transition: all .40s ease;
+    transform: scale(0.95);
+    text-decoration: underline;
+}
+.nav-items{
+    width: 120px;
+    margin-right: 80px;
+    justify-content: space-evenly;
+}
+.nav-items i{
+    font-size: 25px;
+    padding: 4px;
+}
+.nav-items i:hover{
+    color: red;
+    transition: all .40s ease;
+    transform: scale(1.1);
+}
+
+.page1{
+    height: 90vh;
+    width: 100%;
+    /* background-color: green; */
+}
+.info1{
+    display: flex;
+    /* background-color: red; */
+    width: 90%;
+    margin-left: 56px;
+    margin-top: 10px;
+    gap: 30px;
+    padding: 15px;
+    line-height: 30px;
+    font-weight: 530;
+}
+.img1{
+    height: 480px;
+    width: 70%;
+}
+
+.footer{
+    margin-top: 10px;
+    height: 280px;
+    width: 100%;
+    background-color: rgb(135, 113, 113);
+    padding-top: 30px;
+    line-height: 50px;
+}
+.contact-info{
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+}
+.social-info i{
+    font-size: 25px;
+    gap: 20px;
+}
+.social-info i:hover{
+    color: red;
+    transform: scale(1.05);
+}
+.other-info-1{
+    display: flex;
+    flex-direction: column;
+}
+.other-info-1 a{
+    text-decoration: none;
+}
+.other-info-1 a:hover{
+    color: red;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+.login-page{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 120px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    justify-content: space-between;
+}
+.site-info{
+    line-height: 40px;
+    margin-top: 100px;
+}
+.site-info h1{
+    color: rgb(231, 63, 63);
+    font-size: 42px;
+    font-weight:700;
+}
+.site-info p{
+    font-weight:500;
+    font-size: 18px;
+}
+.line{
+    height: 1px;
+    width: 300px;
+    background-color: rgb(149, 142, 142);
+}
+.form{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    border-radius: 35px;
+    gap: 20px;
+    box-shadow: 1px 3px 10px grey;
+}
+input[type="number"],input[type="password"],input[type="text"]{
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 0px 10px;
+    border: 0.5px solid grey;
+}
+input[type="submit"]{
+    height: 35px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, rgb(251, 0, 0),yellow);
+}
+input[type="submit"]:hover{
+    cursor: pointer;
+    transform: scale(1.04);
+    border: solid brown;
+}
+.create-acc{
+    margin-top: 10px;
+}
+.form a{
+    color: brown;
+    text-align: center;
+}
+
+
+
+/* <----------------------------------------BREAK POINT----------------------------------------------------> */
+
+
+.signup-form{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    margin-left: 380px;
+    font-size: 20px;
+}
+
+.dob{
+    display: flex;
+    gap: 30px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 476px){
+    
+    .header{
+        background-color: red;
+        width: 100%;
+    }
+    body{
+        width: 200%;
+        min-height: 100%;
+    }
+    .page1  img{
+        width: 10%;
+        height: 15%;
+    }
+}
